@@ -1,0 +1,141 @@
+a {
+    cursor: pointer;
+    text-decoration: none;
+}
+
+.wrapper{
+    width: 100%;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 23px;
+    font-weight: 600;
+    color: white;
+    background-color: white;
+}
+
+.content{
+    width: 97%;
+    height: 90%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.smallBlock{
+    width: 30%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    
+}
+
+
+.bigBlock{
+    width: 40%;
+    height: 100%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+}
+
+.smallBlock_imgBlock{
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    height: 43%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(158, 158, 158);
+    transition: 0.3s;
+    color: white;
+}
+.smallBlock_imgBlock::before{
+    content: ''; /* Добавляем контент, чтобы псевдоэлемент был видимым */
+    position: absolute; /* Устанавливаем позицию "absolute" для псевдоэлемента */
+    bottom: 0; /* Размещаем псевдоэлемент вверху родительского элемента */
+    left: 0; /* Размещаем псевдоэлемент влево от родительского элемента */
+    width: 100%; /* Занимаем всю ширину родительского элемента */
+    height: 50%; /* Занимаем всю высоту родительского элемента */
+  
+    /* Создаем градиент поверх картинки */
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.767));
+}
+
+.smallBlock_imgBlock span{
+    position: absolute;
+    font-size: 30px;
+    bottom: 5px;
+    text-shadow: 0 0 30px black;
+}
+.smallBlock_imgBlock:hover{
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+    transform: scale(1.03);
+}
+.smallBlock_imgBlock img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    
+}
+
+.bigBlock_imgBlock{
+    text-align: center;
+    cursor: pointer;
+    position: relative;
+    width: 90%;
+    height: 90%;
+    overflow: hidden;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 10px;
+    box-shadow: 0 0 5px rgb(158, 158, 158);
+
+    transition: 0.3s;
+    color: white;
+}
+.bigBlock_imgBlock::before{
+    content: ''; /* Добавляем контент, чтобы псевдоэлемент был видимым */
+    position: absolute; /* Устанавливаем позицию "absolute" для псевдоэлемента */
+    bottom: 0; /* Размещаем псевдоэлемент вверху родительского элемента */
+    left: 0; /* Размещаем псевдоэлемент влево от родительского элемента */
+    width: 100%; /* Занимаем всю ширину родительского элемента */
+    height: 40%; /* Занимаем всю высоту родительского элемента */
+  
+    /* Создаем градиент поверх картинки */
+    background-image: linear-gradient(rgba(255, 255, 255, 0), rgba(255, 196, 0, 0.767));
+}
+.bigBlock_imgBlock span{
+    position: absolute;
+    font-size: 30px;
+    bottom: 5px;
+    text-shadow: 0 0 30px black;
+}
+.bigBlock_imgBlock:hover{
+    box-shadow: 0 0 10px rgb(95, 95, 95);
+    transform: scale(1.03);
+}
+.bigBlock_imgBlock img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}

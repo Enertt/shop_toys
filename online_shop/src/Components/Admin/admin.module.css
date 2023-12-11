@@ -1,0 +1,357 @@
+.wrapper{
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    position: relative;
+}
+
+
+.addBlock{
+    width: 300px;
+    height: 60px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+
+    .addBlockButton{
+        cursor: pointer;
+        width: 100%;
+        height: 90%;
+        border-radius: 15px;
+        border: rgb(138, 138, 138) solid 1px;
+        font-size: 18px;
+        font-weight: 600;
+        background-color: rgb(168, 247, 42);
+    }
+}
+
+.searchBlock{
+    position: relative;
+    width: 300px;
+    height: 550px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .searchPanel{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 5px;
+        width: 100%;
+        height: 15%;
+        background-color: rgb(247, 216, 42);
+        border-radius: 15px 15px 0 0;
+
+        .searchPanel_span{
+            font-weight: 500;
+        }
+        .searchPanel_inputBlock{
+            position: relative;
+            width: 70%;
+            height: 35%;
+            border-radius: 5px;
+            display: flex;
+            align-items: center;
+            .searchPanel_input{
+                width: 80%;
+                height: 100%;
+                border-radius: 5px 0 0 5px;
+                border: rgb(138, 138, 138) solid 1px;
+            }
+            .searchPanel_button{
+                cursor: pointer;
+                right: 0;
+                width: 20%;
+                height: 119%;
+                border-radius: 0 5px 5px 0;
+                background-color: black;
+                outline: none;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                color: white;
+
+                .searchPanel_buttonSvg{
+                    color: white;
+                }
+            }
+        }
+    }
+
+    .searchResult{
+        width: 100%;
+        height: 85%;
+        background-color: rgb(224, 224, 224);
+        border-radius: 0 0 15px 15px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        .searchResultItem{
+            width: 75%;
+            height: 70%;
+            padding-bottom: 15px;
+            background-color: white;
+            border-radius: 15px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+        }
+    }
+}
+
+.selectWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.5);
+    backdrop-filter: blur(10px);
+    z-index: 2000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+.selectWrapper_select{
+    width: 70%;
+    background-color: white;
+    padding: 20px;
+    
+}
+.selectWrapper_select input{
+    transform: scale(1.5);
+    margin-bottom: 15px;
+}
+.selectWrapper_select span{
+    font-size: 25px;
+    margin: 10px;
+}
+.newForm{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+    border-radius: 15px;
+}
+.newFormContent{
+    width: 100%;
+    height: 100%;
+    background-color: rgb(255, 255, 255);
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .newFormItem{
+        width: 75%;
+        height: 70%;
+        margin-top: 10px;
+        background-color: white;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+
+
+    }
+    
+}
+
+.imgInput{
+    margin-bottom: 10px;
+}
+.infoInputBlock{
+    height: 30px;
+    width: 100%;
+    border-radius: 15px;
+    margin-bottom: 10px;
+    position: relative;
+}
+.openSelect{
+    padding: 5px 0 5px 0;
+}
+.saveTag{
+    cursor: pointer;
+    position: absolute;
+    right: 0;
+    top: 0;
+    height: 107%;
+    color: white;
+    background-color: greenyellow;
+    display: flex;
+    align-items: center;
+    font-weight: 600;
+    justify-content: center;
+    padding: 0 5px 0 5px;
+    border-radius: 0 15px 15px 0;
+}
+.textarea{
+    resize: none;
+    height: 40px;
+}
+.infoInput{
+    margin-bottom: 15px;
+    height: 30px;
+    border-radius: 15px;
+    border: rgb(133, 133, 133) solid 1px;
+    padding: 0 10px 0 10px;
+    width: 93%;
+}
+.smallImg{
+    object-fit: contain;
+    margin-bottom: 10px;
+    width: 60px;
+    height: 45px;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}
+
+.content{
+    border-radius: 15px;
+    overflow: hidden;
+    box-shadow: 0 0 10px rgb(163, 163, 163);
+    width: 90%;
+    height: 90%;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.content .img{
+    object-fit: cover;
+    width: 100%;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60%;
+    background-color: rgb(228, 228, 228);
+}
+
+.img img{
+    width: 100%;
+    
+}
+.description{
+    width: 100%;
+    height: 40%;
+    
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+
+    .descriptionContent{
+        position: relative;
+        width: 90%;
+        height: 85%;
+
+        display: flex;
+        flex-direction: column;
+    }
+}
+
+.priceSpan{
+    font-weight: 500;
+
+}
+.nameSpan{
+
+}
+.numberSpan{
+    position: absolute;
+    font-size: 13px;
+    bottom: 0;
+    margin-left: 50%;
+    transform: translate(-50%, 0);
+}   
+
+.modButton, .delButton{
+    width: 60%;
+    height: 35px;
+    margin-top: 15px;
+    border-radius: 15px;
+    border: rgb(131, 131, 131) solid 1px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 600;
+}
+.modButton{
+    background-color: rgb(168, 247, 42);
+}
+.delButton{
+    background-color: rgba(247, 117, 42, 0.842);
+}
+
+.modFormWrapper{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-color: white;
+    z-index: 1000;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .modFormWrapper__item{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .modFormWrapper__item textarea{
+        width: 70vw;
+        resize: none;
+    }
+
+    .modButton{
+
+    }
+}
+
+.delWrapper{
+    position: absolute;
+    z-index: 2000;
+    width: 100%;
+    height: 100vh;
+    background-color: rgba(0, 0, 0, 0.164);
+    backdrop-filter: blur(5px);
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.delWrapper__modal{
+    width: 70%;
+    height: 40%;
+    background-color: white;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 20px;
+}
+.delWrapper__modal__button{
+    width: 70%;
+    height: 40px;
+    border-radius: 15px;
+    font-size: 20px;
+    font-weight: 600;
+}
